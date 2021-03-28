@@ -1,0 +1,144 @@
+:root {
+
+    /*-----Primary-----*/
+
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /*-----Neutral-----*/
+
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --black: #141110;
+
+    /*-----Typography-----*/
+
+    --font-size-copy: 1.4rem;
+
+    /*-----Padding & Margin-----*/
+
+    --padding-cards: 35px 25px;
+    --padding-rating: 10px 15px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+p {
+    font-size: var(--font-size-copy);
+    line-height: 1.5;
+}
+
+
+.main-section {
+    padding: 100px 25px;
+    margin: 0 auto;
+    background-image: url(images/bg-pattern-top-mobile.svg), url(images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top, bottom;
+}
+
+/*-----Top-Section-----*/
+
+.top-section {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.top-section__copy {
+    margin-bottom: 45px;
+}
+
+.top-section__copy--title {
+    font-size: 3.2rem;
+    color: var(--very-dark-magenta);
+    margin-bottom: 25px;
+}
+
+.top-section__copy--description {
+    color: var(--dark-grayish-magenta);
+    font-weight: 500;
+}
+
+.top-section__rating--item{
+    padding: var(--padding-rating);
+    background-color: var(--light-grayish-magenta);
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.stars-container {
+    margin-bottom: 10px;
+}
+
+.stars-comment {
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+}
+
+/*-----Bottom-Section-----*/
+
+.img-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 25px;
+}
+
+.img-container img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.bottom-section__card{
+    background-color: var(--very-dark-magenta);
+    padding: var(--padding-cards);
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.bottom-section__card--info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.full-name {
+    font-weight: 700;
+    color: var(--white);
+}
+
+.verified {
+    color: var(--soft-pink);
+    font-weight: 400;
+}
+
+.card-comment {
+    color: var(--white);
+}
+
+/*-----Patterns-----*/
+
+.pattern-top {
+    position: absolute;
+}
+
+.pattern-bottom {
+    position: absolute;
+    top: 200%;
+}
+
